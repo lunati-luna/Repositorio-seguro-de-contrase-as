@@ -1,6 +1,8 @@
 # Repositorio-seguro-de-contrase-as
 
 🚀 Instalación y Uso
+
+
 Clonar el repositorio.
 
 Instalar las dependencias: pip install PyQt6 cryptography.
