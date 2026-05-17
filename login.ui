@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CriptoBóveda - Acceso</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QMainWindow { background-color: #1e1e24; }
+    QLabel { color: #ffffff; font-size: 13px; font-weight: bold; font-family: 'Segoe UI'; }
+    QLineEdit { background-color: #2a2a32; color: #ffffff; border: 1px solid #4a4a5a; border-radius: 6px; padding: 8px; font-size: 13px; }
+    QLineEdit:focus { border: 1px solid #007acc; }
+    QPushButton { background-color: #007acc; color: #ffffff; border: none; border-radius: 6px; padding: 10px; font-size: 13px; font-weight: bold; }
+    QPushButton:hover { background-color: #0098ff; }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>12</number>
+    </property>
+    <property name="leftMargin"><number>40</number></property>
+    <property name="topMargin"><number>30</number></property>
+    <property name="rightMargin"><number>40</number></property>
+    <property name="bottomMargin"><number>30</number></property>
+    <item>
+     <widget class="QLabel" name="lbl_usuario"><property name="text"><string>USUARIO ADMINISTRADOR</string></property></widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_usuario"><property name="placeholderText"><string>Ej: franco_dev</string></property></widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lbl_pass"><property name="text"><string>CONTRASEÑA MAESTRA</string></property></widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_maestra"><property name="echoMode"><enum>QLineEdit::Password</enum></property></widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_entrar"><property name="text"><string>Iniciar Sesión</string></property></widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+</ui>

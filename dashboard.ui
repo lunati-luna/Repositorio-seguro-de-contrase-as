@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Panel de Control - CriptoBóveda</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QMainWindow { background-color: #16161a; }
+    QListWidget { background-color: #24242e; color: #e2e2e2; border: 1px solid #343444; border-radius: 8px; padding: 5px; font-size: 13px; }
+    QListWidget::item { padding: 10px; border-bottom: 1px solid #2d2d3a; }
+    QListWidget::item:selected { background-color: #007acc; color: #ffffff; }
+    QFrame#panel_detalles { background-color: #1e1e24; border: 1px solid #343444; border-radius: 8px; }
+    QLabel { color: #a0a0aa; font-size: 12px; font-weight: bold; font-family: 'Segoe UI'; }
+    QLineEdit { background-color: #2a2a32; color: #ffffff; border: 1px solid #4a4a5a; border-radius: 6px; padding: 8px; font-size: 13px; }
+    QLineEdit:focus { border: 1px solid #007acc; }
+    QPushButton { background-color: #007acc; color: #ffffff; border: none; border-radius: 6px; padding: 12px; font-size: 13px; font-weight: bold; }
+    QPushButton:hover { background-color: #0098ff; }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="mainLayout">
+    <property name="spacing"><number>20</number></property>
+    <property name="leftMargin"><number>20</number></property>
+    <property name="topMargin"><number>20</number></property>
+    <property name="rightMargin"><number>20</number></property>
+    <property name="bottomMargin"><number>20</number></property>
+    
+    <item>
+     <layout class="QVBoxLayout" name="columnaIzquierda">
+      <property name="spacing"><number>12</number></property>
+      <item>
+       <widget class="QLabel" name="label"><property name="text"><string>MIS SITIOS</string></property></widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="lista_cuentas"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_nueva_cuenta"><property name="text"><string>+ Nuevo Registro</string></property></widget>
+      </item>
+     </layout>
+    </item>
+    
+    <item>
+     <widget class="QFrame" name="panel_detalles">
+      <layout class="QVBoxLayout" name="layoutDetalles">
+       <property name="spacing"><number>15</number></property>
+       <property name="leftMargin"><number>25</number></property>
+       <property name="topMargin"><number>25</number></property>
+       <property name="rightMargin"><number>25</number></property>
+       <property name="bottomMargin"><number>25</number></property>
+       <item>
+        <widget class="QLabel" name="lbl_titulo_panel"><property name="text"><string>DETALLES DE LA CUENTA</string></property><property name="styleSheet"><string notr="true">font-size: 16px; color: #ffffff;</string></property></widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl1"><property name="text"><string>PLATAFORMA / SITIO Web</string></property></widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_sitio"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl2"><property name="text"><string>CORREO / USUARIO</string></property></widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_usuario_plataforma"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl3"><property name="text"><string>CONTRASEÑA</string></property></widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_password_plataforma"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_guardar_cambios"><property name="text"><string>Guardar / Actualizar Registro</string></property></widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    
+   </layout>
+  </widget>
+ </widget>
+</ui>
